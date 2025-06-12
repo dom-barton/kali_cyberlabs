@@ -30,7 +30,7 @@ See `handshake.png` for screenshot from Wireshark.
 Executed from terminal:
 ```bash
 nmap -sS 192.168.174.1 -oN scan1.txt
-
+```
 This was a SYN scan (-sS) performed against my local gateway IP 192.168.174.1
 (likely the VMware NAT or bridged network interface).
 
