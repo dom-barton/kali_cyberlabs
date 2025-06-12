@@ -27,11 +27,13 @@ See `handshake.png` for screenshot from Wireshark.
 
 ## Part 2 – Basic nmap scan
 Executed from terminal:
-
 ```bash
 nmap -sS 192.168.174.1
 
+This was a SYN scan (`-sS`) on my local gateway IP.  
+The output will be saved in a separate file: `scan1.txt`.
+
 ## Notes
-- This was my first hands-on capture of a TCP handshake and interpretation of TCP flags.
+- First time I used Wireshark to actively trace TCP flags in a real connection.
 - Observed how the source port is randomly assigned by the OS during connection.
 - Planning to explore TLS negotiation steps and perform subnet scanning in future labs.
