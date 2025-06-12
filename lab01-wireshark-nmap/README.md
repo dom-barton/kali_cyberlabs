@@ -26,14 +26,26 @@ Traffic was captured on interface `eth0` while accessing a website (HTTPS).
 See `handshake.png` for screenshot from Wireshark.
 
 ## Part 2 – Basic nmap scan
+
 Executed from terminal:
 ```bash
-nmap -sS 192.168.174.1
+nmap -sS 192.168.174.1 -oN scan1.txt
 
-This was a SYN scan (`-sS`) on my local gateway IP.  
-The output will be saved in a separate file: `scan1.txt`.
+This was a SYN scan (-sS) performed against my local gateway IP 192.168.174.1
+(likely the VMware NAT or bridged network interface).
+
+### Scan results summary:
+
+- Host is up (responded with very low latency)
+- All 1000 TCP ports returned `filtered`
+- This typically means:
+  - Firewall is silently dropping packets,
+  - No services are actively listening,
+  - Host is deliberately configured to not respond (stealth mode)
+- The scan output was saved to `scan1.txt` and is available in this folder.
 
 ## Notes
 - First time I used Wireshark to actively trace TCP flags in a real connection.
 - Observed how the source port is randomly assigned by the OS during connection.
 - Planning to explore TLS negotiation steps and perform subnet scanning in future labs.
+- Now completed a first live SYN scan with nmap and saved the output for interpretation.
