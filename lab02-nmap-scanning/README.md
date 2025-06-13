@@ -63,4 +63,3 @@ The filtered results indicate:
 > Although the SYN scan is meant to avoid detection, none of the ports responded.
 > This likely means that strict firewall rules are silently dropping packets without revealing any open services.  
 > From a defensive perspective, this is a good example of a hardened perimeter — the system reveals nothing unless explicitly allowed.
-...
