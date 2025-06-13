@@ -27,7 +27,7 @@ See `handshake.png` for screenshot from Wireshark.
 
 ## Part 2 – Basic nmap scan
 
-Executed from terminal:
+Command:
 ```bash
 nmap -sS 192.168.174.1 -oN scan1.txt
 ```
