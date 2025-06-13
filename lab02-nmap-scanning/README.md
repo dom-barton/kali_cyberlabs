@@ -27,3 +27,9 @@ This scan used a full TCP connection method (3-way handshake). The results are c
 - Protected by a firewall dropping unsolicited packets
 - (or) Not offering any open TCP services on standard ports
 Output saved in: `scan_sT.txt`
+
+### Notes
+- This scan targeted TCP ports only (the most common service ports: 1-1000).
+- Because TCP is connection-oriented, a full **3-way handshake** (SYN → SYN-ACK → ACK) was used to verify if a service is listening.
+- TCP Connect scan (`-sT`) relies on the OS to initiate real connections – it’s **louder** and more detectable in logs.
+- Useful when scanning from environments **without administrator privileges**, or when doing a full scan intentionally.
