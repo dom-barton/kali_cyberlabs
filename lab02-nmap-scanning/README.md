@@ -22,11 +22,13 @@ nmap -sT 192.168.174.1 -oN scan_sT.txt
 - MAC address resolved: 00:50:56:C0:00:08 (VMware virtual NIC)
 - No open or closed ports detected
 
+- Output saved in: `scan_sT.txt`
+
 ## Interpretation
 This scan used a full TCP connection method (3-way handshake). The results are consistent with a host that is:
 - Protected by a firewall dropping unsolicited packets
 - (or) Not offering any open TCP services on standard ports
-Output saved in: `scan_sT.txt`
+
 
 ### Notes
 - This scan targeted TCP ports only (the most common service ports: 1-1000).
