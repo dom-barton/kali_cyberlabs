@@ -1,0 +1,11 @@
+# Nmap 7.95 scan initiated Mon Jun 16 20:44:46 2025 as: /usr/lib/nmap/nmap --privileged -sT -oN lab04_scan_sT.txt 192.168.75.128
+Nmap scan report for 192.168.75.128
+Host is up (0.00030s latency).
+Not shown: 997 closed tcp ports (conn-refused)
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:0C:29:48:42:A1 (VMware)
+
+# Nmap done at Mon Jun 16 20:45:01 2025 -- 1 IP address (1 host up) scanned in 15.55 seconds
