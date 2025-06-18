@@ -74,6 +74,14 @@ Looking up status of 192.168.75.128
 > `enum4linux` is a powerful enumeration tool for SMB, NetBIOS, and RPC. It's useful during **penetration testing** and **internal audits**.
 > Even without full access, tools like this can leak useful metadata (for example hostnames, MACs, domains).
 > This is part of **network reconnaissance** in ethical hacking.
+>
+> The `-a` flag in `enum4linux -a` stands for "**all**". It tells the tool to run **all available ("simple") enumeration modules**, including user lists, shares, group info, OS details, and more (-U -S -G -P -r -o -n -i). It's the most comprehensive scan mode.
+>  
+> The `tee` command is a Linux utility that lets you **save the output to a file** while **also displaying it in the terminal**.  
+> In this case:  
+> - `tee enum4linux_win10.txt` saves the results to a file, while you still see the results live in your terminal window.
+
+---
 
 > **Personal note/reflection:**  
 > The scan results revealed services like RPC, NetBIOS, and SMB — I’ve seen the names before, but this was my **first time identifying them via actual nmap and enum4linux output**.
