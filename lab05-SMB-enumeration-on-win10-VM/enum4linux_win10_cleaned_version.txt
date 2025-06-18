@@ -1,0 +1,21 @@
+Starting enum4linux v0.9.1 on Wed Jun 18 22:02:45 2025
+
+========================================( Target Information )=========================================
+Target ........... 192.168.75.128
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+===========================( Enumerating Workgroup/Domain on 192.168.75.128 )===========================
+[+] Got domain/workgroup name: WORKGROUP
+
+==============================( Nbtstat Information for 192.168.75.128 )===============================
+Looking up status of 192.168.75.128
+	DESKTOP-SUACGUP <00> -         B <ACTIVE>  Workstation Service
+	WORKGROUP       <00> - <GROUP> B <ACTIVE>  Domain/Workgroup Name
+	DESKTOP-SUACGUP <20> -         B <ACTIVE>  File Server Service
+	MAC Address = 00-0C-29-48-42-A1
+
+==================================( Session Check on 192.168.75.128 )==================================
+[E] Server doesn't allow session using username '', password ''.  Aborting remainder of tests.
